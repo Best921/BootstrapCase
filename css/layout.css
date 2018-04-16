@@ -1,1 +1,65 @@
-layout.css
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+header{
+	width: 100%;
+	height: 100px;
+	background: #f9f9f9;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+header + *{
+	margin-top: 100px;
+}
+header > .container > nav{
+	height: 100px;
+	border: 0;
+	background: inherit;
+}
+header > .container > nav > .container-fluid{
+	height: 100px;
+}
+header > .container > nav .navbar-header{
+	margin-top: 15px;
+}
+header > .container > nav .nav-tell{
+	width: 186px;
+	height: 47px;
+	line-height: 47px;
+	font-size: 16px;
+	background: url("../images/index_08.png");
+	text-indent: 50px;
+	color: #ef200d;
+	margin-top: 27px;
+}
+header > .container > nav .nav-tell a{
+	color: inherit;
+}
+header > .container > nav .nav-main{
+	height: 100px;
+	margin-left: 80px;
+}
+header > .container > nav .nav-main li{
+	height: 100px;
+	line-height: 100px;
+	width: 98px;
+	text-align: center;
+	font-size: 16px;
+	margin-left: 40px;
+}
+header > .container > nav .nav-main li a{
+	height: 100px;
+	line-height: 100px;
+	padding: 0;
+	margin: 0;
+}
+header > .container > nav .nav-main li.active a{
+	background: url("../images/index_02.png");
+}
