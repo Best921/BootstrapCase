@@ -18,18 +18,21 @@ header{
 header + *{
 	margin-top: 100px;
 }
-header > .container > nav{
+header .container{
+	padding: 0;
+}
+header .navbar-default{
 	height: 100px;
 	border: 0;
 	background: inherit;
 }
-header > .container > nav > .container-fluid{
+header .navbar .container-fluid{
 	height: 100px;
 }
-header > .container > nav .navbar-header{
+header .navbar .navbar-header{
 	margin-top: 15px;
 }
-header > .container > nav .nav-tell{
+header .navbar .nav-tell{
 	width: 186px;
 	height: 47px;
 	line-height: 47px;
@@ -38,15 +41,16 @@ header > .container > nav .nav-tell{
 	text-indent: 50px;
 	color: #ef200d;
 	margin-top: 27px;
+	float: right;
 }
-header > .container > nav .nav-tell a{
+header .navbar .nav-tell a{
 	color: inherit;
 }
-header > .container > nav .nav-main{
-	height: 100px;
+header .navbar .navbar-nav{
 	margin-left: 80px;
+	background: #f9f9f9;
 }
-header > .container > nav .nav-main li{
+header .navbar .navbar-nav li{
 	height: 100px;
 	line-height: 100px;
 	width: 98px;
@@ -54,12 +58,59 @@ header > .container > nav .nav-main li{
 	font-size: 16px;
 	margin-left: 40px;
 }
-header > .container > nav .nav-main li a{
-	height: 100px;
+header .navbar .navbar-nav li a{
 	line-height: 100px;
 	padding: 0;
 	margin: 0;
 }
-header > .container > nav .nav-main li.active a{
+header .navbar .navbar-nav li.active a{
 	background: url("../images/index_02.png");
+}
+.banner,
+.banner img{
+	width: 100%;
+}
+@media (max-width: 992px){
+   header .navbar .navbar-nav{
+	   margin-left:210px;
+	   position: absolute;
+	   top: 0;
+   }
+}
+@media (max-width:767px){
+	header,
+	header .navbar-default{
+		height: 80px;
+	}
+	header+* {
+		margin-top: 80px;
+	}
+	header .navbar-collapse{
+		padding: 0;
+	}
+	header .navbar .navbar-nav{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+    header .navbar .navbar-nav li{
+		height:50px;
+		line-height:50px;
+		width: 100%;
+		margin: 0;
+	}
+	header .navbar .navbar-header{
+		margin-top:7px;
+	}
+	header .navbar .navbar-header .navbar-toggle{
+		margin-top:15px;
+		margin-right:25px;
+	}
+	header .navbar .navbar-nav li{
+		height: 50px;
+	}
+	header .navbar .navbar-nav li a{
+		line-height: 50px;
+	}
 }
